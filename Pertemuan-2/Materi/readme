@@ -1,0 +1,14 @@
+CSS
+
+3 metode untuk menghubungkan CSS :
+1. inline
+2. internal 
+3. external
+
+Anatomi CSS :
+
+Selector {
+    property : value;
+    property : value;
+    property : value;
+}
