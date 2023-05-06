@@ -4,10 +4,15 @@
     <title>Latihan CSS</title>
     <link rel="stylesheet" href="latihan.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
     <style>
         p {
             color: grey;
             font-size: 24px;
+            font-family: 'Dancing Script', cursive;
         }
 
         .paraf {
@@ -20,12 +25,30 @@
             color: salmon;
         }
 
+        .test {
+            text-align: center;
+        }
+
+        .bg-kuning {
+            background-color: yellow;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Pseudo class */
+        .bg-kuning:hover {
+            background-color: blue;
+            font-size: 60px;
+        }
+
+        li:active {
+            font-size: 40px;
+        }
 
     </style>
 </head>
 <body>
     <!-- metode inline -->
-    <h1 style="color: red;">Hallo Dunia</h1>
+    <h1 class="bg-kuning" style="color: red;">Hallo Dunia</h1>
 
     <!-- Internal -->
     <p>Welcome to my side</p>
@@ -41,5 +64,7 @@
 
     <!-- External -->
     <a href="#">Link</a>
+
+    <p class="paraf test bg-kuning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quia at deleniti maiores voluptates a facilis exercitationem laudantium. Fugit, quis quidem rerum voluptatum perferendis eos numquam officia eum velit fugiat porro. Odio, voluptatum maxime nam iure quas animi itaque repudiandae sed, aut laborum doloribus necessitatibus enim at debitis quibusdam saepe?</p>
 </body>
 </html>
