@@ -1,0 +1,7 @@
+tulis 10 tag yang termasuk display inline!
+1. a
+2.
+
+tulis 10 tag yang termasuk display block!
+1. p
+2.

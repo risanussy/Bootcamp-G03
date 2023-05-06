@@ -1,70 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Latihan CSS</title>
-    <link rel="stylesheet" href="latihan.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-
+    <title>Latihan 2</title>
     <style>
-        p {
-            color: grey;
-            font-size: 24px;
-            font-family: 'Dancing Script', cursive;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .paraf {
-            color: black;
-            font-size: 16px;
-            font-style: italic;
+        /* .kotak {
+            width: 100%;
+            height: 100px;
+            background-color: red;
+            display: none;
+            padding: 50px;
+            padding-left: 100px;
+            padding-top: 20px;
         }
 
-        #satu, #dua, .coba {
-            color: salmon;
+        .k {
+            width: 60px;
+            height: 60px;
+            background-color: aqua;
+            margin: auto;
         }
 
-        .test {
-            text-align: center;
-        }
-
-        .bg-kuning {
+        span {
+            width: 50px;
+            height: 50px;
             background-color: yellow;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: inline-block;
+            margin: 30px;
+            margin-right: 100px;
+            margin-top: 100px;
+        } */
+   
+        .container {
+            border: 1px solid red;
+            width: 80%;
+            margin: auto;
+            margin-top: 200px;
+            position: relative;
         }
 
-        /* Pseudo class */
-        .bg-kuning:hover {
-            background-color: blue;
-            font-size: 60px;
+        /* 
+        
+            Posisition :
+            1. absolute
+            2. relative
+            3. static => default
+            4. fixed
+        
+        */
+
+        .k1 {
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
         }
 
-        li:active {
-            font-size: 40px;
+        .k2 {
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            position: absolute;
+            /* top, left, right, bottom */
+            right: 0;
+            top: 0;
+            /* position: relative; */
+            /* transform: translateX(10px); */
+            box-shadow: 2px 2px 14px rgba(0, 0, 0, 70%);
         }
 
-    </style>
+        .k3 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+   </style>
 </head>
 <body>
-    <!-- metode inline -->
-    <h1 class="bg-kuning" style="color: red;">Hallo Dunia</h1>
+    <div class="container">
+        <div class="k1"></div>
+        <div class="k2"></div>
+        <div class="k3"></div>
+    </div>
 
-    <!-- Internal -->
-    <p>Welcome to my side</p>
-    <p class="paraf">Ini paragraf 2</p>
-    <p class="paraf">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, nihil?</p>
-    <p class="coba">ini apa aku gtau?</p>
 
-    <ul>
-        <li id="satu">satu</li>
-        <li id="dua">dua</li>
-        <li>tiga</li>
-    </ul>
+    <!--
+    Tag Kosong
+    Block
+    <div class="kotak">
+        <div class="k"></div>
+    </div>
 
-    <!-- External -->
-    <a href="#">Link</a>
-
-    <p class="paraf test bg-kuning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quia at deleniti maiores voluptates a facilis exercitationem laudantium. Fugit, quis quidem rerum voluptatum perferendis eos numquam officia eum velit fugiat porro. Odio, voluptatum maxime nam iure quas animi itaque repudiandae sed, aut laborum doloribus necessitatibus enim at debitis quibusdam saepe?</p>
+    Inline
+    <span></span>
+    <span></span>
+    <span></span>
+    -->
 </body>
 </html>
